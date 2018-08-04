@@ -1,63 +1,64 @@
  @import url(https://fonts.googleapis.com/css?family=Varela+Round);
-* {box-sizing: border-box}
-.mySlides,.mySlides2,.mySlides3 ,.mySlides4,.mySlides5,.mySlides6{display: none;
-}
 .myImg {vertical-align: middle;}
 .myImg {
   animation-duration: 1s;
   animation-name: slidein;
 }
-.abL.animate{
+.abL{
   animation-duration: 3s;
    animation-name:aboutL;
    
 }
-.abL2.animate{
+.abL2{
+  animation-duration: 3s;
+   animation-name:aboutL;
+   animation-delay: 2s;
+}
+.ctL{
   animation-duration: 3s;
    animation-name:aboutL;
    
 }
-.ctL.animate{
-  animation-duration: 3s;
-   animation-name:aboutL;
-   
-}
-.dAr.animate{
+.dAr{
   animation-duration: 5s;
    animation-name:downArrow;
+   animation-delay: 6s;
    
 }
-.abLI.animate{
+.abLI{
   animation-duration: 5s;
    animation-name:aboutLI;
    
 }
-.abLI2.animate{
+.abLI2{
   animation-duration: 5s;
    animation-name:aboutLI;
+   animation-delay: 1.3s;
    
 }
-.abLI3.animate{
+.abLI3{
   animation-duration: 5s;
    animation-name:aboutLI;
-   
+   animation-delay: 2s;
 }
-.abLI4.animate{
+.abLI4{
   animation-duration: 5s;
    animation-name:aboutLI;
+   animation-delay: 4s;
 }
 
-.abR.animate{
+.abR{
   animation-duration: 3s;
    animation-name:aboutR;
+   animation-delay: 1.3s;
    
 }
-.abR2.animate{
+.abR2{
   animation-duration: 3s;
   animation-name:aboutR;
-   
+   animation-delay: 4s;
 }
-.contR.animate{
+.contR{
   animation-duration: 5s;
   animation-name:contactR;
    
@@ -68,7 +69,7 @@
     font-size: 3em;
   }
 }
-.mynn.animate{
+.mynn{
  animation-duration: 10s;
    animation-name:myAnim;
 }
@@ -154,18 +155,9 @@
 }
 
 
-
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 40vw;
-  position: relative;
-  margin: auto;
-}
 a:not([href]):not([tabindex]) {
 color: white;
 }
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -213,6 +205,12 @@ color: white;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+a.ptitre{
+color: #f2f2f2;
+}
+a.ptitre:hover,a.ptitre:active{
+color: #EC8074;
 }
 
 /* The dots/bullets/indicators */
@@ -324,4 +322,47 @@ span.dot.active ,.dot:hover,span.dot2.active ,.dot2:hover
  #return-to-top:hover i {
      color: #fff;
      top: 5px;
+}
+ #return-to-top2 i {
+     color: #fff;
+     margin: 0;
+     position: relative;
+     top: 13px;
+     font-size: 19px;
+     -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+     -ms-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
+}
+ #return-to-top2:hover {
+     background: rgba(236,128,116, 0.9);
+}
+ #return-to-top2:hover i {
+     color: #fff;
+     top: 5px;
+}
+
+
+@media(min-width: 600px) {
+  .prev, .next,.text {font-size: 18px;}
+  .slideshow-container {
+    max-width: 40vw;
+  position: relative;
+  margin: auto;
+
+}
+
+}
+
+
+@media(max-width: 500px) {
+  .prev, .next,.text {font-size: 8px;}
+  .slideshow-container {
+    max-width: 100%;
+  position: relative;
+  margin: auto;
+
+}
+
 }

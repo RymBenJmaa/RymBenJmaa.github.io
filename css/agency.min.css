@@ -764,5 +764,6 @@ ul.social-buttons li a{
     line-height:1.75
 }
  ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover{
-    background-color:#EC8074 
+    background-color:#EC8074 ;
+    color:white;
 }
