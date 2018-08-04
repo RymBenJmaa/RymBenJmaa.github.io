@@ -3277,13 +3277,18 @@ padding-bottom: 2vh;
   -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+.navigation ul > li.menu-item-has-children > ul.sub-menu > li.active {
 
+color: #EC8074;
+border: none;
+}
 .navigation ul > li.menu-item-has-children > ul.sub-menu > li {
   position: relative;
   display: block;
   background-color: #212529;
   font-weight: 400;
   font-size: 11px;
+  border: none;
 }
 
 .navigation ul > li.menu-item-has-children > ul.sub-menu > li:after {
