@@ -115,30 +115,45 @@
      background-color: rgba(236,128,116, 0.7);
 }
 /* Fading animation */
- .fading {
+ .fading{
      -webkit-animation-name: fading;
-     -webkit-animation-duration: 3s;
+     -webkit-animation-duration:1.5s;
      animation-name: fading;
-     animation-duration: 3s;
+     animation-duration: 1.5s;
 }
+
  @-webkit-keyframes fading {
-     from {
-        opacity: .4;
-        width:20%;
+     0%{
+         opacity: .4;
+         margin-left: 100%;
+        margin-right: 100%;
     }
-     to {
+     50% {
+         opacity: .6;
+         margin-left: 25%;
+        margin-right: 25%;
+    }
+    100%{
         opacity: 1;
-        width:100%;
+         margin-left: 50%;
+        margin-right: 50%;
     }
 }
  @keyframes fading {
-     from {
-          opacity: .4;
-        width:20%;
+     0%{
+         opacity: .4;
+         margin-left: 100%;
+        margin-right: 100%;
     }
-     to {
+     50% {
+         opacity: .6;
+         margin-left: 25%;
+        margin-right: 25%;
+    }
+    100%{
         opacity: 1;
-        width:100%;
+         margin-left: 50%;
+        margin-right: 50%;
     }
 }
 /* On smaller screens, decrease text size */

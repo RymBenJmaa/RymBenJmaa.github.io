@@ -116,9 +116,9 @@
 /* Fading animation */
  .fading {
      -webkit-animation-name: fading;
-     -webkit-animation-duration: 1.5s;
+     -webkit-animation-duration: 3s;
      animation-name: fading;
-     animation-duration: 1.5s;
+     animation-duration: 3s;
 }
  @-webkit-keyframes fading {
      from {
@@ -140,6 +140,48 @@
          width:100%;
     }
 }
+ .fading2 {
+     -webkit-animation-name: fading2;
+     -webkit-animation-duration:1.5s;
+     animation-name: fading2;
+     animation-duration: 1.5s;
+}
+
+ @-webkit-keyframes fading2 {
+     0%{
+         opacity: .4;
+         margin-left: 100%;
+        margin-right: 100%;
+    }
+     50% {
+         opacity: .6;
+         margin-left: 25%;
+        margin-right: 25%;
+    }
+    100%{
+        opacity: 1;
+         margin-left: 50%;
+        margin-right: 50%;
+    }
+}
+ @keyframes fading2 {
+     0%{
+         opacity: .4;
+         margin-left: 100%;
+        margin-right: 100%;
+    }
+     50% {
+         opacity: .6;
+         margin-left: 25%;
+        margin-right: 25%;
+    }
+    100%{
+        opacity: 1;
+         margin-left: 50%;
+        margin-right: 50%;
+    }
+}
+
 /* On smaller screens, decrease text size */
  @media only screen and (max-width: 300px) {
      .prev, .next,.text {
@@ -269,11 +311,11 @@
     <p class="item-intro text-muted " style="font-family: RymFont;text-align: center; ">Une application <a href="https://itunes.apple.com/tn/app/thakarhom/id1376622045?mt=8 " rel="noopener " target="_blank ">IOS </a></p>
     <div class="slideshow-container">
 
-        <div class="mySlides fading">
+        <div class="mySlides fading2">
             <img class="myImg" src="../img/portfolio/pim/IOS/1.png" height="400">
         </div>
 
-        <div class="mySlides fading">
+        <div class="mySlides fading2">
             <img class="myImg" src="../img/portfolio/pim/IOS/2.png" height="400">
         </div>
 
@@ -283,10 +325,10 @@
         <div class="mySlides fading">
             <img class="myImg" src="../img/portfolio/pim/IOS/5.png" height="400 ">
         </div>
-        <div class="mySlides fading">
+        <div class="mySlides fading2">
             <img class="myImg" src="../img/portfolio/pim/IOS/3.png" height="400">
         </div>
-        <div class="mySlides fading">
+        <div class="mySlides fading2">
             <img class="myImg" src="../img/portfolio/pim/IOS/6.png" height="400">
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
