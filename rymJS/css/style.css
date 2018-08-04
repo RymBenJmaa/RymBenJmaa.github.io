@@ -3404,11 +3404,11 @@ padding-bottom: 2vh;
 
 .navigation ul > li.menu-item-has-children > ul.sub-menu > li:hover > a {
   color: #EC8074 ; 
-  border: hidden;
+  border: none;
 }
 .navigation ul > li.menu-item-has-children > ul.sub-menu > li:active > a {
   color: #EC8074 ; 
-  border: hidden;
+  border: none;
   font-style: italic;
 }
 
